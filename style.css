@@ -1,0 +1,135 @@
+/* ===== Theme =====
+
+primary : #198cfe
+secondary : #cce8fe
+third : #479ce2
+
+text: #292d3c
+background : #ebf4fd
+background-2 : #ffffff
+
+Inspiration website : https://dribbble.com/shots/6609532-EverDo-Exploration/attachments
+*/
+
+body {
+	background-color: #ebf4fd;
+	color: #292d3c;
+	font-family: 'Cabin', sans-serif;
+	letter-spacing: 0.05em;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 20px;
+}
+
+hr {
+	opacity: 0.1;
+	margin-bottom: 30px;
+}
+
+.classic-container {
+	background-color: #ffffff;
+	width: 800px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px 20px 40px 20px;
+	margin: 20px auto;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+}
+
+#profile-picture {
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	box-shadow: inset 0px 5px 10px rgba(0,0,0,0.9);
+}
+
+#description {
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#description::first-letter {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.button-hudge {
+	background-color: #198cfe;
+	display: block;
+	transition: 0.3s;
+	color: #ffffff;
+	width: fit-content;
+	margin: 0 auto;
+	text-decoration: none;
+	padding: 20px 30px;
+	border-radius: 5px;
+	border-bottom: 2px solid #006dd8;
+}
+
+.button-hudge:hover {
+	background-color: #3fa0ff;
+	border-color: #198cfd;
+}
+
+#school-list {
+	list-style: none;
+}
+
+#school-list li {
+	margin-bottom: 20px;
+	line-height: 1.8em;
+}
+
+#school-list time {
+	color: #198cfd;
+}
+
+.check-mark {
+	float: left;
+	color: #198cfd;
+	font-size: 25px;
+}
+
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.list-inline li {
+	display: inline;
+	padding: 10px;
+}
+
+.list-inline li i{
+	font-size: 50px;
+	color: #198cfe;
+	transition: 0.3s;
+}
+
+.list-inline li i:hover{
+	color: #006dd8;
+}
+
+.signature {
+	font-size: 0.7em;
+	color: #cccccc;
+	margin-bottom: -20px;
+	padding-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 870px) {
+	.classic-container {
+		width: 600px;
+	}
+}
+
+@media (max-width: 665px) {
+	.classic-container {
+		width: 400px;
+	}
+}
